@@ -4,9 +4,9 @@ const assert = chai.assert;
 const Translator = require('../components/translator.js');
 
 suite('Basic Assertions', () => {
-  test('#1 - Tests if the value is null', () => {
+  test('#1', () => {
     assert.isNull(null);
-    assert.isNotNull(1);
+    assert.isNotNull(undefined);
   });
 });
 
