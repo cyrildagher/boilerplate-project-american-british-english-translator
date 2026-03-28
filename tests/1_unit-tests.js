@@ -3,6 +3,13 @@ const assert = chai.assert;
 
 const Translator = require('../components/translator.js');
 
+suite('Basic Assertions', () => {
+  test('#1 - Tests if the value is null', () => {
+    assert.isNull(null);
+    assert.isNotNull(1);
+  });
+});
+
 suite('Unit Tests', () => {
   const translator = new Translator();
 
